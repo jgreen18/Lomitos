@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ContactoController extends Controller
 {
-    //
+    public function __invoke(){
+        return view("vusuario.contacto");
+    }
+   
 }

@@ -1,5 +1,13 @@
 <?php
 
+use App\Http\Controllers\ComportamientoController;
+use App\Http\Controllers\ContactoController;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NosotrosController;
+use App\Http\Controllers\PruebaController;
+use App\Http\Controllers\ServiciosController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,39 +21,36 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('inicio');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('inicio');
+Route::get('/',HomeController::class)
+->name('inicio');
 
-Route::get('prueba', function () {
-    return view('prueba');
-});
+Route::get('prueba', PruebaController::class)
+->name('prueba');
 
-Route::get('Nosotros', function () {
-    return view('prueba');
-});
-Route::get('Staff', function () {
-    return view('prueba');
-});
-Route::get('Servicios', function () {
-    return view('prueba');
-});
-Route::get('Prueba_de_Comportamiento', function () {
-    return view('prueba');
-});
-Route::get('Contacto', function () {
-    return view('prueba');
-});
+Route::get('nosotros', NosotrosController::class)
+->name('Nosotros');
+   
+Route::get('staff', StaffController::class)
+->name('staff');
 
+Route::get('servicios', ServiciosController::class)
+->name('servicios');
+
+Route::get('prueba_de_Comportamiento', ComportamientoController::class)
+->name('prueba_de_Comportamiento');
+
+Route::get('contacto', ContactoController::class)
+->name('contacto');
 
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+    Route::get('/dashboard', DashboardController::class)->name('dashboard');
 });
 
 // Route::middleware([

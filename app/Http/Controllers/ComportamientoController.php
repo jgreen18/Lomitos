@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class ComportamientoController extends Controller
 {
-    //
+    public function __invoke(){
+        return view("vusuario.prueba_comportamiento");
+    }
+   
 }
