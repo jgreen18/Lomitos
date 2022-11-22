@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <x-appun></x-appun>
+    <x-app-layout></x-app-layout>
 </body>
 
 </html>
