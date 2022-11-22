@@ -34,16 +34,16 @@ Route::get('nosotros', NosotrosController::class)
 ->name('Nosotros');
    
 Route::get('staff', StaffController::class)
-->name('staff');
+->name('Staff');
 
 Route::get('servicios', ServiciosController::class)
-->name('servicios');
+->name('Servicios');
 
 Route::get('prueba_de_Comportamiento', ComportamientoController::class)
-->name('prueba_de_Comportamiento');
+->name('Prueba_de_Comportamiento');
 
 Route::get('contacto', ContactoController::class)
-->name('contacto');
+->name('Contacto');
 
 Route::middleware([
     'auth:sanctum',

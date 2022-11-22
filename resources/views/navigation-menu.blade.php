@@ -7,8 +7,8 @@
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
                         <x-jet-application-mark class="block h-9 w-auto" /><!--Poner logo de lomitos aquí-->
-                        <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                            {{ __('Lomitos House') }}
+                        <x-jet-nav-link href="{{ route('inicio') }}" :active="request()->routeIs('inicio')">
+                            {{ ('Lomitos House') }}
                         </x-jet-nav-link>
                     </a>
                 </div>
@@ -17,19 +17,28 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     
                     <x-jet-nav-link>
-                        Nosotros
+                        <a href="{{ route('Nosotros') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Nosotros</a>
+
                     </x-jet-nav-link>
                     <x-jet-nav-link>
-                        Staff
+                      
+                        <a href="{{ route('Staff') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Staff</a>
+
                     </x-jet-nav-link>
                     <x-jet-nav-link>
-                        Servicios
+                        
+                        <a href="{{ route('Servicios') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Servicios</a>
+
                     </x-jet-nav-link>
                     <x-jet-nav-link>
-                        Prueba de comportamiento
+                        
+                        <a href="{{ route('Prueba_de_Comportamiento') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Prueba de comportamiento</a>
+
                     </x-jet-nav-link>
                     <x-jet-nav-link>
-                        Contacto
+                       
+                        <a href="{{ route('Contacto') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Contacto</a>
+
                     </x-jet-nav-link>
                 </div>
             </div>
@@ -63,6 +72,9 @@
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
+                            <x-jet-dropdown-link href="{{ route('dashboard') }}">
+                                {{ __('Dashboard') }}
+                            </x-jet-dropdown-link>
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -84,6 +96,7 @@
                         </x-slot>
                     </x-jet-dropdown>
                 </div>
+                
                 @else
                 <a href="{{ route('login') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Iniciar sesión</a>
                 
