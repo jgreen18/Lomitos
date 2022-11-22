@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('citas', function (Blueprint $table) {
             $table->id();
 
-            $table->timestamp('fecha_registro');
+            $table->timestamp('fecha_registro')->current;
             $table->timestamp('fecha_cita')->nullable();
 
             $table->unsignedBigInteger('mascota_id');
