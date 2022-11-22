@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-blue-500 shadow-lg">
+<nav x-data="{ open: false }" class="bg-blue-500 shadow-lg m-auto">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -15,7 +15,7 @@
                 </div>
 
                 <!-- Navigation Links -->
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <div class="hidden space-x-8 pl-20 sm:-my-px sm:ml-10 sm:flex">
                     
                     <x-jet-nav-link>
                         Nosotros
@@ -33,7 +33,7 @@
                         Contacto
                     </x-jet-nav-link>
                     <x-jet-nav-link>     
-                        <a href="{{ route('login') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6">Iniciar sesión</a>
+                        <a href="{{ route('login') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Iniciar sesión</a>
                     </x-jet-nav-link>
 
 
