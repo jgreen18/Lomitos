@@ -43,11 +43,11 @@
                 </div>
             </div>
 
-            <div class="hidden sm:flex sm:items-center sm:ml-6 bg-red-700">
+            <div class="hidden sm:flex sm:items-center sm:ml-6 bg-blue-500">
              
                 <!-- Settings Dropdown -->
                 @Auth
-                <div class="ml-3 relative bg-green-700">
+                <div class="ml-3 relative">
                     <x-jet-dropdown align="right" width="48">
                         <x-slot name="trigger">
                            
@@ -98,7 +98,7 @@
                 </div>
                 
                 @else
-                <a href="{{ route('login') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Iniciar sesión</a>
+                <a href="{{ route('login') }}" class="pt-1 text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Iniciar sesión</a>
                 
                 @endauth
 
