@@ -16,17 +16,17 @@
 
             <div class="mt-4">
                 <x-jet-label for="email" value="{{ __('Correo electrónico') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
+                <x-jet-input id="email" placeholder="Ingrese su correo electrónico" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password" value="{{ __('Contraseña') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <x-jet-input id="password" placeholder="Ingrese una contraseña" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>
 
             <div class="mt-4">
                 <x-jet-label for="password_confirmation" value="{{ __('Confirmar contraseña') }}" />
-                <x-jet-input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
+                <x-jet-input id="password_confirmation" placeholder="Confirmar contraseña" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
 
             @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
@@ -45,14 +45,14 @@
                     </x-jet-label>
                 </div>
             @endif
-            <div class="flex items-center justify-end mt-3">
+            <div class="flex items-center justify-end mt-5">
                 <x-jet-button class="ml-4 hover:to-blue-600 duration-700">
                     {{ __('Registrar') }}
                 </x-jet-button>
             </div>
             <div class="flex items-center justify-end mt-4">
-                <a class="text-sm hover:text-red-500 duration-700" href="{{ route('login') }}">
-                    {{ __('¿Ya estás registrado?') }}
+                <a class="hover:text-red-500 duration-700" href="{{ route('login') }}">
+                    {{ __('¿Ya estás registrado? Inicia sesión') }}
                 </a>
             </div>
         </form>

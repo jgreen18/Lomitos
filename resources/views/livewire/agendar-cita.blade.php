@@ -35,7 +35,7 @@
             </div>
         </x-slot>
         <x-slot name="footer">
-            <x-jet-secondary-button wire:click="$set('open', false)">
+            <x-jet-secondary-button wire:click="$set('open', false)" class="mr-2">
                 Cancelar
             </x-jet-secondary-button>
             <x-jet-danger-button>

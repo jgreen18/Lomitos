@@ -15,6 +15,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <!-- Styles -->
+    <link rel="icon" type="image/jpg" href=""/><!--Agregar ruta-->
     @livewireStyles
 </head>
 
