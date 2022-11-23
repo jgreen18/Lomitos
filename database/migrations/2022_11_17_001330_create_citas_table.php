@@ -35,6 +35,14 @@ return new class extends Migration
             ->onDelete("cascade")
             ->onUpdate("cascade");
 
+            $table->unsignedBigInteger('servicio_id');
+
+            $table->foreign("servicio_id")
+            ->references('id')
+            ->on('servicios')
+            ->onDelete("cascade")
+            ->onUpdate("cascade");
+
 
             
             $table->timestamps();
