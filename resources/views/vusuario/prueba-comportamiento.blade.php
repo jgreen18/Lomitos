@@ -22,7 +22,16 @@
                         tempore excepturi, fugit placeat nostrum aut accusantium, culpa, vitae a corrupti.
                     </p>
                 </div>
-                @livewire('agendar-cita')
+
+                {{-- Agregue condicion --}}
+                @auth
+                    @livewire('agendar-cita')
+                @else
+                    <x-jet-button wire:click="$set('open', true)">
+                       <a href="{{ route('login') }}">Inicia sesion para agendar</a> 
+                    </x-jet-button>
+                @endauth
+                
             </div>
         </div>
     </section>
