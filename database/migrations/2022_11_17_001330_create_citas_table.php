@@ -43,6 +43,14 @@ return new class extends Migration
             ->onDelete("cascade")
             ->onUpdate("cascade");
 
+            $table->unsignedBigInteger('cstatus_id')->default('1');
+
+            $table->foreign("cstatus_id")
+            ->references('id')
+            ->on('cstatuses')
+            ->onDelete("cascade")
+            ->onUpdate("cascade");
+
 
             
             $table->timestamps();
