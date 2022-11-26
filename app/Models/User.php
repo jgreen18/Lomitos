@@ -62,4 +62,8 @@ class User extends Authenticatable
     public function mascotas(){
         return $this->hasMany('App\Models\Mascotas');
     }
+
+    public function roles(){
+        return $this->belongsTo('App\Models\Roles');
+    }
 }

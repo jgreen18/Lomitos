@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->String('nombre', 100);
             $table->text('descripcion');
-            $table->timestamp('fecha_creacion')->current;
+           
         });
     }
 

@@ -8,6 +8,8 @@ use App\Http\Controllers\NosotrosController;
 use App\Http\Controllers\PruebaController;
 use App\Http\Controllers\ServiciosController;
 use App\Http\Controllers\StaffController;
+use App\Models\Servicios;
+use Illuminate\Routing\RouteGroup;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -36,8 +38,19 @@ Route::get('nosotros', NosotrosController::class)
 Route::get('staff', StaffController::class)
 ->name('Staff');
 
-Route::get('servicios', ServiciosController::class)
-->name('Servicios');
+Route::controller(ServiciosController::class)->group(function(){
+    Route::get('servicios', 'servicios')->name('Servicios');
+    Route::get('spa', 'spa')->name('Spa');
+    Route::get('guarderia','guarderia')->name('Guarderia');
+    Route::get('hoteleria', 'hoteleria')->name('Hoteleria');
+    Route::get('medicina_preventiva', 'medicina')->name('Medicina_preventiva');
+    Route::get('paseos', 'paseos')->name('Paseos');
+    Route::get('cuidados_a_domicilios','domicilios')->name('Cuidados_a_domicilios');
+});
+
+
+
+
 
 Route::get('prueba_de_Comportamiento', ComportamientoController::class)
 ->name('Prueba_de_Comportamiento');
