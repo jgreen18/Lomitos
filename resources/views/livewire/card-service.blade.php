@@ -9,7 +9,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Servicio de Spa</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a href={{ route('Spa') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Hotelería</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a <a href={{ route('Hoteleria') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Guardería</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a <a href={{ route('Guarderia') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Paseos</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a <a href={{ route('Paseos') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Medicina preventiva</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a <a href={{ route('Medicina') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">Cuidados a domicilio</h1><!--Cambiar por slots-->
                             <div class="flex items-center flex-wrap ">
-                                <a class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                                <a <a href={{ route('Cuidados') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
                             </div>
                         </div>
                     </div>

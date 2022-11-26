@@ -43,9 +43,9 @@ Route::controller(ServiciosController::class)->group(function(){
     Route::get('spa', 'spa')->name('Spa');
     Route::get('guarderia','guarderia')->name('Guarderia');
     Route::get('hoteleria', 'hoteleria')->name('Hoteleria');
-    Route::get('medicina_preventiva', 'medicina')->name('Medicina_preventiva');
+    Route::get('medicina_preventiva', 'medicina')->name('Medicina');
     Route::get('paseos', 'paseos')->name('Paseos');
-    Route::get('cuidados_a_domicilios','domicilios')->name('Cuidados_a_domicilios');
+    Route::get('cuidados_a_domicilios','domicilios')->name('Cuidados');
 });
 
 

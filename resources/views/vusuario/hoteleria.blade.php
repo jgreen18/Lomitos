@@ -3,7 +3,7 @@
         <div class="container px-5 py-12 mx-auto">
             <div class="text-center mb-12">
                 <h5 class="text-base md:text-lg text-indigo-700 mb-1">¿Sales de la ciudad y no sabes donde dejar a tu lomito?</h5>
-                <h1 class="text-4xl md:text-6xl text-gray-700 font-semibold">Prueba nuestro servicio ed Hotelería</h1>
+                <h1 class="text-4xl md:text-6xl text-gray-700 font-semibold">Prueba nuestro servicio de Hotelería</h1>
             </div>
             <div class="flex flex-col items-center">
                 <img src="https://www.laut.de/System-Of-A-Down/system-of-a-down-158702.jpg" class="shadow-lg"
@@ -22,7 +22,14 @@
                         tempore excepturi, fugit placeat nostrum aut accusantium, culpa, vitae a corrupti.
                     </p>
                 </div>
-                @livewire('agendar-cita')
+                {{-- Agregue condicion --}}
+                @auth
+                    @livewire('agendar-cita')
+                @else
+                    <x-jet-button wire:click="$set('open', true)">
+                       <a href="{{ route('login') }}">Inicia sesion para agendar</a> 
+                    </x-jet-button>
+                @endauth
             </div>
         </div>
     </section>
