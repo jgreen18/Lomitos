@@ -1,78 +1,72 @@
 <div>
-    <section class="md:h-full text-gray-600">
+    <section class="md:h-full">
         <div class="container px-5 py-2 mx-auto">
-            <div class="flex flex-wrap -m-4">
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Servicio de Spa</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a href={{ route('Spa') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+            <div class="flex flex-wrap">
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Spa') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Servicio de Spa</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Hotelería</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a <a href={{ route('Hoteleria') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Hoteleria') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Hotelería</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Guardería</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a <a href={{ route('Guarderia') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Guarderia') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Guardería</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Paseos</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a <a href={{ route('Paseos') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Paseos') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Paseos</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Medicina preventiva</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a <a href={{ route('Medicina') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Medicina') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Medicina preventiva</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="p-4 sm:w-1/2 lg:w-1/3">
-                    <div class="h-full shadow-lg rounded-lg overflow-hidden">
-                        <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://picsum.photos/id/188/720/400" alt="blog">
-                        <div class="p-6 bg-white">
-                            <h1 class="text-2xl font-semibold mb-3">Cuidados a domicilio</h1><!--Cambiar por slots-->
-                            <div class="flex items-center flex-wrap ">
-                                <a <a href={{ route('Cuidados') }} class="text-indigo-300 hover:text-blue-500 duration-500 inline-flex items-center md:mb-2 lg:mb-0">Más información</a>
+                <div class="w-96 h-fit group p-4">
+                    <a class="text-white pt-2 px-5" href="{{ route('Cuidados') }}">
+                        <div class="relative overflow-hiddel">
+                            <img class="rounded-md" src="https://picsum.photos/id/188/720/400" alt="">
+                            <div
+                                class="absolute h-full w-full bg-black/20 rounded-md flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                                <h1 class="text-white py-2 px-5">Cuidados a domicilio</h1>
                             </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
