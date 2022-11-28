@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
 
             $table->timestamp('fecha_registro')->current;
-            $table->timestamp('fecha_cita')->nullable();
+            $table->date('fecha_cita');
+            $table->time('hora_cita');
 
             $table->unsignedBigInteger('mascota_id');
 
@@ -27,7 +28,7 @@ return new class extends Migration
             ->onDelete("cascade")
             ->onUpdate("cascade");
 
-            $table->unsignedBigInteger('extra_id');
+            $table->unsignedBigInteger('extra_id')->nullable();
 
             $table->foreign("extra_id")
             ->references('id')

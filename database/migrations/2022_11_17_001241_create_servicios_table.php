@@ -20,12 +20,12 @@ return new class extends Migration
            $table->text('descripcion');
            $table->float('precio');
 
-           $table->unsignedBigInteger('categoria_id');
-           $table->foreign("categoria_id")
-           ->references('id')
-           ->on('categorias')
-           ->onDelete("cascade")
-           ->onUpdate("cascade");
+        //    $table->unsignedBigInteger('categoria_id');
+        //    $table->foreign("categoria_id")
+        //    ->references('id')
+        //    ->on('categorias')
+        //    ->onDelete("cascade")
+        //    ->onUpdate("cascade");
 
 
 

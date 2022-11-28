@@ -7,5 +7,19 @@ use Illuminate\Database\Eloquent\Model;
 
 class Citas extends Model
 {
-    use HasFactory;
+    protected $fillable = [
+       
+        'hora_cita',
+        'fecha_cita',
+        'mascota_id',
+        'servicio_id',
+    ];
+    public function mascotas(){
+        return $this->hasOne('App\Models\Mascotas');
+    }
+    public function extras(){
+        return $this->hasOne('App\Models\Extras');
+    }
 }
+
+

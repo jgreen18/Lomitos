@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Extras extends Model
 {
-    use HasFactory;
+    public function citas(){
+        return $this->belongsTo('App\Models\Extras');
+    }
 }

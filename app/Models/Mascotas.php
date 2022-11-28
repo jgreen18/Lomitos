@@ -17,4 +17,7 @@ class Mascotas extends Model
     public function pruebas(){
         return $this->hasOne('App\Models\Mascotas');
     }
+    public function citas(){
+        return $this->belongsTo('App\Models\Mascotas');
+    }
 }
