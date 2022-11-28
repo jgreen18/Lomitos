@@ -25,7 +25,7 @@
                 <div class="p-4 sm:w-1/2 lg:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-sm overflow-hidden">
                         <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://scontent.flap2-1.fna.fbcdn.net/v/t39.30808-6/299284318_5436348229765160_792263423816866080_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeHUJ-KSrQYI0XvUaMuqThs0yF-oJ4RivxbIX6gnhGK_FtN0Ky0p_Y0gsxPeH1r96sYg_tc905iiuZIDjPj4r42l&_nc_ohc=PP1bouFOIroAX8T_pTo&_nc_ht=scontent.flap2-1.fna&oh=00_AfBJDBJmqqceBpz1Gah9CR9FEfWiGsQR4wiHdkd72Mmj7g&oe=63834AEC" alt="blog">
+                            src="https://scontent.flap2-1.fna.fbcdn.net/v/t39.30808-6/299284318_5436348229765160_792263423816866080_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=5okVyA4FaVgAX8KJC_R&_nc_ht=scontent.flap2-1.fna&oh=00_AfAp8-NxQ38LfVKLo2jFwBzoffShwCQ6cPtCQyKl6iY69g&oe=638939AC" alt="blog">
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">¡Hola, me llamo Susana!</h1>
                             <p class="leading-relaxed mb-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
