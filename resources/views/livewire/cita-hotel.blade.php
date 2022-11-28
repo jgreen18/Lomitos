@@ -15,14 +15,24 @@
                     @endforeach
                 </select>
             </div>
+            <!--Datos de ingreso-->
             <div class="inline-grid grid-cols-2 gap-5">
                 <div class="mb-4">
-                     <x-jet-label value="Seleccione una fecha" />
+                     <x-jet-label value="Fecha de ingreso" />
                      <x-jet-input type="date" class="w-64"/>
                 </div>
                 <div class="mb-4">
-                     <x-jet-label value="Elija una hora" />
-                     <x-jet-input type="time" class="w-64"/>
+                     <x-jet-label value="Fecha de salida" />
+                     <x-jet-input type="date" class="w-64"/>
+                </div>
+            </div>
+            <!--Servicios extra-->
+            <div class="inline-grid grid-cols-2 gap-5">
+                <div class="mb-4">
+                     <x-jet-label value="Servicios extra" />
+                     <select class="w-64 rounded-md" name="" id="">
+                        <!--Lista de servicios en checkbox-->
+                     </select>
                 </div>
             </div>
         </x-slot>
