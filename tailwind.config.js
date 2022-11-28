@@ -14,7 +14,14 @@ module.exports = {
             fontFamily: {
                 sans: ['Nunito', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'lomito-primary': '#47A0A5',
+                'lomito-secondary': '#08566D',
+                'lomito-thirdty': '#FFDE59',
+                'lomito-fourthy': '#FFC2B4'
+            }
         },
+
     },
 
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],

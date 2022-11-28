@@ -1,5 +1,5 @@
 <div class="w-full bg-center bg-cover h-full">
-    <div class="h-20 bg-blue-700">
+    <div class="h-20 bg-lomito-primary">
         <div class="text-center py-5">
             <h1 class="text-white font-extrabold text-2xl uppercase">
                 Nuesta ubicación

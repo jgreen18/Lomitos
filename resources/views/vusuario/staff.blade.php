@@ -13,7 +13,7 @@
                 <div class="p-4 sm:w-1/2 lg:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-sm overflow-hidden">
                         <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://scontent.flap2-1.fna.fbcdn.net/v/t1.6435-9/65386784_2403569739701525_791085757052747776_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeG5gOyqPhxPqq2H7Os4DYvAGU0lb2DsGS4ZTSVvYOwZLryGfYB9f52C2iUpEmLFd048vwJkmqWZC0mNH0xHZrX5&_nc_ohc=rQ67IbOyW-sAX-dgo2z&_nc_ht=scontent.flap2-1.fna&oh=00_AfCP_xYAspGqgT3-Z8w1baOqmuU7hbl1Vaa5ac0zUN0yYw&oe=63A52BE7" alt="blog">
+                            src="{{URL::asset('/img/staff-k.jpeg')}}" alt="blog">
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">¡Hola, me llamo Karen!</h1>
                             <p class="leading-relaxed mb-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -25,7 +25,7 @@
                 <div class="p-4 sm:w-1/2 lg:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-sm overflow-hidden">
                         <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="https://scontent.flap2-1.fna.fbcdn.net/v/t39.30808-6/299284318_5436348229765160_792263423816866080_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=5okVyA4FaVgAX8KJC_R&_nc_ht=scontent.flap2-1.fna&oh=00_AfAp8-NxQ38LfVKLo2jFwBzoffShwCQ6cPtCQyKl6iY69g&oe=638939AC" alt="blog">
+                            src="{{URL::asset('/img/staff-s.jpg')}}" alt="blog">
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">¡Hola, me llamo Susana!</h1>
                             <p class="leading-relaxed mb-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.

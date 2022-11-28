@@ -10,7 +10,7 @@
     <div class="max-w-md mx-auto py-9 bg-white rounded-sm overflow-hidden drop-shadow-sm md:max-w-6xl">
         <div class="md:flex">
             <div class="md:shrink-0">
-                <img class="h-96 w-full object-cover md:h-full md:w-96" src="https://scontent.flap2-1.fna.fbcdn.net/v/t1.6435-9/196519051_119408520334354_4667744425606987381_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=7Ibs5SgAFRkAX-2ehPQ&_nc_ht=scontent.flap2-1.fna&oh=00_AfC0vP0GmYS3ZLH_6H-oQVYBbdeZBuaqQqXjYEQ6DOFAJA&oe=63AB5F27"
+                <img class="h-96 w-full object-cover md:h-full md:w-96" src="{{URL::asset('/img/nosotros.jpg')}}"
                     alt="">
             </div>
             <div class="p-8">

@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-blue-500 shadow-lg">
+<nav x-data="{ open: false }" class="bg-lomito-primary shadow-lg">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -17,33 +17,33 @@
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     
                     <x-jet-nav-link>
-                        <a href="{{ route('Nosotros') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Nosotros</a>
+                        <a href="{{ route('Nosotros') }}" class="text-sm text-white font-bold hover:text-lomito-secondary pt-6 duration-500">Nosotros</a>
 
                     </x-jet-nav-link>
                     <x-jet-nav-link>
                       
-                        <a href="{{ route('Staff') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Staff</a>
+                        <a href="{{ route('Staff') }}" class="text-sm text-white font-bold hover:text-lomito-secondary pt-6 duration-500">Staff</a>
 
                     </x-jet-nav-link>
                     <x-jet-nav-link>
                         
-                        <a href="{{ route('Servicios') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Servicios</a>
+                        <a href="{{ route('Servicios') }}" class="text-sm text-white font-bold hover:text-lomito-secondary pt-6 duration-500">Servicios</a>
 
                     </x-jet-nav-link>
                     <x-jet-nav-link>
                         
-                        <a href="{{ route('Prueba_de_Comportamiento') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Prueba de comportamiento</a>
+                        <a href="{{ route('Prueba_de_Comportamiento') }}" class="text-sm text-white font-bold hover:text-lomito-secondary pt-6 duration-500">Prueba de comportamiento</a>
 
                     </x-jet-nav-link>
                     <x-jet-nav-link>
                        
-                        <a href="{{ route('Contacto') }}" class="text-sm text-white font-bold hover:text-gray-700 pt-6 duration-500">Contacto</a>
+                        <a href="{{ route('Contacto') }}" class="text-sm text-white font-bold hover:text-lomito-secondary pt-6 duration-500">Contacto</a>
 
                     </x-jet-nav-link>
                 </div>
             </div>
 
-            <div class="hidden sm:flex sm:items-center sm:ml-6 bg-blue-500">
+            <div class="hidden sm:flex sm:items-center sm:ml-6 bg-lomito-primary">
              
                 <!-- Settings Dropdown -->
                 @Auth
@@ -52,7 +52,7 @@
                         <x-slot name="trigger">
                            
                                 <span class="inline-flex rounded-md">
-                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-bold rounded-md text-white bg-blue-500 hover:text-gray-700 focus:outline-none transition duration-500">
+                                    <button type="button" class="inline-flex items-center px-3 py-2 border border-transparent text-sm leading-4 font-bold rounded-md text-white bg-lomito-primary hover:text-lomito-secondary focus:outline-none transition duration-500">
                                         {{ Auth::user()->name }}
 
                                         <svg class="ml-2 -mr-0.5 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
