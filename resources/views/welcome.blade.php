@@ -8,7 +8,4 @@
      <section>
         @livewire('mapa')
      </section>
-     <footer>
-        
-     </footer>
  </x-app-layout>

@@ -1,4 +1,4 @@
-<div class="w-full bg-center bg-cover h-72">
+<div class="w-full bg-center bg-cover h-full">
     <div class="h-20 bg-blue-700">
         <div class="text-center py-5">
             <h1 class="text-white font-extrabold text-2xl uppercase">

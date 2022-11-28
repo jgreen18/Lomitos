@@ -1,6 +1,14 @@
-<x-app-layout>
-     <div class="w-1/2 h-1/2 ">
-         <x-maps-leaflet :markers="[['lat' => 24.11623, 'long' => -110.31029]]" :zoomLevel="15" :centerPoint="['lat' => 24.11623, 'long' => -110.31029]"></x-maps-leaflet> 
-
-     </div>
+<x-app-layout >
+    <x-jet-form-section submit="updateProfileInformation">
+        <x-slot name="title">
+            {{ __('Profile Information') }}
+        </x-slot>
+    
+        <x-slot name="description">
+            {{ __('Update your account\'s profile information and email address.') }}
+        </x-slot>
+        <x-slot name="form">
+            {{ __('Update your account\'s profile information and email address.') }}
+        </x-slot>
+    </x-jet-form-section>
 </x-app-layout>

@@ -22,7 +22,7 @@
 <body class="font-sans antialiased">
     <x-jet-banner />
 
-    <div class="min-h-screen bg-white">
+    <div class="h-full bg-white">
         @livewire('navigation-menu')
 
         <!-- Page Heading -->
@@ -39,7 +39,9 @@
             {{ $slot }}
         </main>
     </div>
-
+    <footer>
+        @livewire('footer')
+     </footer>
     @stack('modals')
 
     @livewireScripts
