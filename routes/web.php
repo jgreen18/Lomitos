@@ -30,7 +30,7 @@ Route::get('/',HomeController::class)
 ->name('inicio');
 
 Route::get('prueba', PruebaController::class)
-->name('prueba');
+->name('prueba')->middleware('auth:sanctum','admin');
 
 Route::get('nosotros', NosotrosController::class)
 ->name('Nosotros');

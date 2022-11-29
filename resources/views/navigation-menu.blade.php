@@ -218,10 +218,10 @@
             </div>
         </div>
     </div> --}}
-    <script>
+    {{-- <script>
         public function roles(){
             $role = {{Auth::user()->role_id}}
 
         }return $role;
-    </script>
+    </script> --}}
 </nav>
