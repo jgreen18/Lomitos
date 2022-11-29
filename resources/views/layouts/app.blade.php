@@ -50,6 +50,7 @@
     @stack('modals')
 
     @livewireScripts
+    @stack('js')
     <script>
         livewire.on('alert', function() {
             Swal.fire(
@@ -64,25 +65,6 @@
                 '¡Gracias por su preferencia!',
                 'success'
             )
-        })
-        livewire.on('alert3', function() {
-            Swal.fire({
-                title: '¿Estás seguro?',
-                text: "No serás capaz de revertir esta acción.",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: 'Si, eliminar'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        '¡Información eliminada!',
-                        'Tus datos han sido eliminados',
-                        'success'
-                    )
-                }
-            })
         })
     </script>
 </body>

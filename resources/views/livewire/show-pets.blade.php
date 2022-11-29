@@ -101,8 +101,16 @@
                                 </p>
                             </td>
                             <td class=" flex px-5 py-5 border-b border-gray-200 bg-white text-sm">
-                               @livewire('update-pet', ['mascota'=>$mascota], key($mascota->id))
-                               @livewire('delete-pet',['mascota'=>$mascota], key($mascota->id))
+                                {{-- @livewire('update-pet', ['mascota'=>$mascota], key($mascota->id)) --}}
+                                <a class="py-2 px-4 text-white rounded-md cursor-pointer bg-lomito-primary hover:bg-lomito-secondary duration-500"
+                                    wire:click="edit({{ $mascota }})">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                {{-- @livewire('delete-pet', ['mascota' => $mascota], key($mascota->id)) --}}
+                                <a class="ml-2 py-2 px-4 text-white rounded-md cursor-pointer bg-red-500 hover:bg-red-600 duration-500"
+                                    wire:click="$emit('deletePet', {{ $mascota->id }})">
+                                    <i class="fas fa-trash"></i>
+                                </a>
                             </td>
                         </tr>
                     @endforeach
@@ -110,4 +118,91 @@
             </table>
         </x-table>
     </div>
+    <x-jet-dialog-modal wire:model="open_edit">
+        <x-slot name="title">
+            Actualizar información
+        </x-slot>
+        <x-slot name="content">
+            <div class="inline-grid grid-cols-2 gap-5">
+                <div class="mb-4">
+                    <x-jet-label value="Nombre del lomito" />
+                    <x-jet-input wire:model="mascota.nombre" type="text" placeholder="Pluto" />
+                    <x-jet-input-error for='nombre'>
+
+                    </x-jet-input-error>
+
+
+                </div>
+                <div class="mb-4">
+                    <x-jet-label value="Edad" />
+                    <x-jet-input type="number" placeholder="años" wire:model="mascota.edad" />
+                    <x-jet-input-error for='edad'>
+
+                    </x-jet-input-error>
+
+
+                </div>
+                <div class="mb-4">
+                    <x-jet-label value="Raza" />
+                    <x-jet-input type="text" placeholder="Chihuahueño" wire:model="mascota.raza" />
+                    <x-jet-input-error for='raza'>
+
+                    </x-jet-input-error>
+
+                </div>
+
+                <div class="mb-4">
+                    <select name="" wire:model="mascota.sexo">
+                        <option selected value="Macho">Macho</option>
+                        <option value="Hembra">Hembra</option>
+                    </select>
+                    <x-jet-input-error for='sexo'>
+
+                    </x-jet-input-error>
+
+                </div>
+                <div class="mb-4">
+                    <x-jet-label value="Peso" />
+                    <x-jet-input type="text" placeholder="kg" wire:model="mascota.peso" />
+                    <x-jet-input-error for='peso'>
+
+                    </x-jet-input-error>
+
+                </div>
+            </div>
+        </x-slot>
+        <x-slot name="footer">
+            <x-jet-secondary-button wire:click="$set('open_edit', false)" class="mr-2">
+                Cancelar
+            </x-jet-secondary-button>
+            <x-jet-danger-button wire:click="update" wire:loading.attr="disabled" class="disabled:opacity-25">
+                Actualizar
+            </x-jet-danger-button>
+        </x-slot>
+    </x-jet-dialog-modal>
+    @push('js')
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Livewire.on('deletePet', mascotaId => {
+                Swal.fire({
+                    title: '¿Estás seguro?',
+                    text: "No serás capaz de revertir esta acción.",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Si, eliminar'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        Livewire.emitTo('show-pets', 'delete', mascotaId);
+                        Swal.fire(
+                            '¡Información eliminada!',
+                            'Tus datos han sido eliminados',
+                            'success'
+                        )
+                    }
+                })
+            });
+        </script>
+    @endpush
 </div>
