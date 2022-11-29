@@ -41,7 +41,7 @@ class AddPet extends Component
         ]);
 
          $this->reset(['open','nombre','edad','raza','sexo','peso'    ]);
-         $this->emitTo('add-pet','render');
+         $this->emitTo('show-pets','render');
          $this->emit('alert');
         
     }

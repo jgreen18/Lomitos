@@ -1,17 +1,18 @@
 <div>
-    <x-jet-button wire:click="$set('open', true)">
-        Agregar mascota
-    </x-jet-button>
+    <a class="py-2 px-4 text-white rounded-md cursor-pointer bg-lomito-primary hover:bg-lomito-secondary duration-500"
+        wire:click="$set('open', true)">
+        <i class="fas fa-edit"></i>
+    </a>
 
     <x-jet-dialog-modal wire:model="open">
         <x-slot name="title">
-            Agregar un nuevo lomito
+            Actualizar información de {{ $mascota->nombre }}
         </x-slot>
         <x-slot name="content">
             <div class="inline-grid grid-cols-2 gap-5">
                 <div class="mb-4">
                     <x-jet-label value="Nombre del lomito" />
-                    <x-jet-input type="text" placeholder="Pluto" wire:model="nombre"/>
+                    <x-jet-input wire:model="mascota.nombre" type="text"  placeholder="Pluto" />
                     <x-jet-input-error for='nombre'>
 
                     </x-jet-input-error>
@@ -20,7 +21,7 @@
                 </div>
                 <div class="mb-4">
                     <x-jet-label value="Edad" />
-                    <x-jet-input type="number" placeholder="años" wire:model="edad"/>
+                    <x-jet-input type="number" placeholder="años" wire:model="mascota.edad" />
                     <x-jet-input-error for='edad'>
 
                     </x-jet-input-error>
@@ -29,7 +30,7 @@
                 </div>
                 <div class="mb-4">
                     <x-jet-label value="Raza" />
-                    <x-jet-input type="text" placeholder="Chihuahueño" wire:model="raza"/>
+                    <x-jet-input type="text" placeholder="Chihuahueño" wire:model="mascota.raza" />
                     <x-jet-input-error for='raza'>
 
                     </x-jet-input-error>
@@ -37,7 +38,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <select name=""  wire:model="sexo">
+                    <select name="" wire:model="mascota.sexo">
                         <option selected value="Macho">Macho</option>
                         <option value="Hembra">Hembra</option>
                     </select>
@@ -48,7 +49,7 @@
                 </div>
                 <div class="mb-4">
                     <x-jet-label value="Peso" />
-                    <x-jet-input type="text" placeholder="kg" wire:model="peso"/>
+                    <x-jet-input type="text" placeholder="kg" wire:model="mascota.peso" />
                     <x-jet-input-error for='peso'>
 
                     </x-jet-input-error>
@@ -57,7 +58,7 @@
             </div>
         </x-slot>
         <x-slot name="footer">
-            <x-jet-secondary-button  wire:click="$set('open', false)" class="mr-2">
+            <x-jet-secondary-button wire:click="$set('open', false)" class="mr-2">
                 Cancelar
             </x-jet-secondary-button>
             <x-jet-danger-button wire:click="save" wire:loading.attr="disabled" class="disabled:opacity-25">

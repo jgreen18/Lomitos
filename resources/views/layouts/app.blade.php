@@ -8,7 +8,8 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
     <link rel="icon" type="image/x-icon" href="{{ URL::asset('/img/welcome/perro.png') }}">
-    <link rel="stylesheet" href="{{ URL::asset('/vendor/fontawesome-free/fontawesome-free-6.2.1-web/css/all.min.css') }}">
+    <link rel="stylesheet"
+        href="{{ URL::asset('/vendor/fontawesome-free/fontawesome-free-6.2.1-web/css/all.min.css') }}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -53,9 +54,35 @@
         livewire.on('alert', function() {
             Swal.fire(
                 'Cita agendada exitosamente',
-                'Gracias por su preferencia!',
+                '¡Gracias por su preferencia!',
                 'success'
             )
+        })
+        livewire.on('alert2', function() {
+            Swal.fire(
+                'Información actualizada',
+                '¡Gracias por su preferencia!',
+                'success'
+            )
+        })
+        livewire.on('alert3', function() {
+            Swal.fire({
+                title: '¿Estás seguro?',
+                text: "No serás capaz de revertir esta acción.",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Si, eliminar'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire(
+                        '¡Información eliminada!',
+                        'Tus datos han sido eliminados',
+                        'success'
+                    )
+                }
+            })
         })
     </script>
 </body>

@@ -10,7 +10,7 @@ class ShowPets extends Component
 {
     public $sort = 'nombre';
     public $direction = 'desc';
-
+    protected $listeners = ['render'=>'render'];
     public function render()
     {
         $id = Auth::user()->id;
