@@ -2,7 +2,7 @@
     <div class="h-20 bg-lomito-primary">
         <div class="text-center py-5">
             <h1 class="text-white font-extrabold text-2xl uppercase">
-                Nuesta ubicación
+                Nuestra ubicación
             </h1>
         </div>
     </div>

@@ -6,7 +6,8 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" /><!--Poner logo de lomitos aquí-->
+                        <!--Poner logo de lomitos aquí-->
+                        <img class="w-14" src="{{ URL::asset('/img/welcome/logo.png') }}" alt="">
                         <x-jet-nav-link href="{{ route('inicio') }}" :active="request()->routeIs('inicio')">
                             {{ ('Lomitos House') }}
                         </x-jet-nav-link>

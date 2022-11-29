@@ -7,7 +7,7 @@
         </div>
         <div class="order-1 lg:order-2">
             <img class="h-80 w-80 object-cover lg:w-[500px] lg:h-[500px]"
-                src="{{URL::asset('/img/slogan.jpg')}}"
+                src="{{URL::asset('/img/welcome/slogan.jpg')}}"
                 alt="">
         </div>
     </div>

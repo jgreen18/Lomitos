@@ -6,28 +6,40 @@
                 <h1 class="text-3xl md:text-4xl text-black font-extrabold uppercase tracking-wider">Servicio de Spa</h1>
             </div>
             <div class="max-w-2xl mx-auto">
-                <div id="default-carousel" class="relative" data-carousel="static">
+                <div id="default-carousel" class="relative" data-carousel="slide">
                     <!-- Carousel wrapper -->
                     <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
                         <!-- Item 1 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
                             <span
                                 class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
                                 Slide</span>
-                            <img src="{{ URL::asset('/img/staff-k.jpeg') }}"
-                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            <img src="{{ URL::asset('/img/spa/spa-8.jpeg') }}"
+                                class="block absolute top-2/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 2 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/staff-s.jpeg') }}"
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/spa/spa-9.jpeg') }}"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 3 -->
-                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/spa-1.jpeg') }}"
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/spa/spa-3.jpeg') }}"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/spa/spa-6.jpeg') }}"
+                                class="block absolute top-3/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 5 -->
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/spa/spa-5.jpeg') }}"
+                                class="block absolute top-3/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                     </div>
@@ -39,6 +51,10 @@
                             data-carousel-slide-to="1"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
                             data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5"
+                            data-carousel-slide-to="4"></button>
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
@@ -99,5 +115,6 @@
                     @endauth
                 </div>
             </div>
+        </div>
     </section>
 </x-app-layout>

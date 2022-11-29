@@ -7,7 +7,7 @@
                     <span class="font-bold text-lomito-thirdty uppercase mb-2">Dirección</span>
                     <span class="my-2">
                         <p class="text-lomito-thirdty font-semibold  text-md">Estado 30 #33, Colonia 8 de Octubre
-                            1era sección
+                            1ra sección
                         </p>
                         <p class="text-lomito-thirdty font-semibold  text-md">
                             Código Postal 23080, La Paz, B.C.S.

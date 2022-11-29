@@ -9,10 +9,12 @@
                 </a>
             </li>
             <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50">
-                <a href="">
+                <a href="#second">
                     <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                         {{ __('Mascotas') }}
                     </h2>
+                    {{-- Agregar componente livewire aquí --}}
+
                 </a>
             </li>
             <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50">
@@ -23,10 +25,19 @@
                 </a>
             </li>
         </ul>
+
+        <div id="tab-contents">
+            <div class="" id="first">
+                
+            </div>
+            <div id="second">
+                @livewire('show-pets')
+            </div>
+        </div>
     </x-slot>
 
     <div>
-        <div class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
+        <div id="first" class="max-w-7xl mx-auto py-10 sm:px-6 lg:px-8">
             @if (Laravel\Fortify\Features::canUpdateProfileInformation())
                 @livewire('profile.update-profile-information-form')
 

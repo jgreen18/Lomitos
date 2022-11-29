@@ -10,7 +10,7 @@
     <div class="max-w-md mx-auto py-9 bg-white rounded-sm overflow-hidden drop-shadow-sm md:max-w-6xl">
         <div class="md:flex">
             <div class="md:shrink-0">
-                <img class="h-96 w-full object-cover md:h-full md:w-96" src="{{URL::asset('/img/nosotros.jpg')}}"
+                <img class="h-96 w-full object-cover md:h-full md:w-96" src="{{URL::asset('/img/staff/nosotros.jpg')}}"
                     alt="">
             </div>
             <div class="p-8">

@@ -13,7 +13,7 @@
                 <div class="p-4 sm:w-1/2 lg:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-sm overflow-hidden">
                         <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="{{URL::asset('/img/staff-k.jpeg')}}" alt="blog">
+                            src="{{URL::asset('/img/staff/staff-k.jpeg')}}" alt="blog">
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">¡Hola, me llamo Karen!</h1>
                             <p class="leading-relaxed mb-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -25,7 +25,7 @@
                 <div class="p-4 sm:w-1/2 lg:w-1/3">
                     <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-sm overflow-hidden">
                         <img class="lg:h-72 md:h-48 w-full object-cover object-center"
-                            src="{{URL::asset('/img/staff-s.jpg')}}" alt="blog">
+                            src="{{URL::asset('/img/staff/staff-s.jpeg')}}" alt="blog">
                         <div class="p-6 bg-white">
                             <h1 class="text-2xl font-semibold mb-3">¡Hola, me llamo Susana!</h1>
                             <p class="leading-relaxed mb-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
