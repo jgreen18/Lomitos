@@ -7,7 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>{{ config('app.name', 'Laravel') }}</title>
-    <link rel="icon" type="image/x-icon" href="{{URL::asset('/img/welcome/perro.png')}}">
+    <link rel="icon" type="image/x-icon" href="{{ URL::asset('/img/welcome/perro.png') }}">
+    <link rel="stylesheet" href="{{ URL::asset('/vendor/fontawesome-free/fontawesome-free-6.2.1-web/css/all.min.css') }}">
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -17,7 +18,8 @@
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Styles -->
-    <link rel="icon" type="image/jpg" href=""/><!--Agregar ruta-->
+    <link rel="icon" type="image/jpg" href="" />
+    <!--Agregar ruta-->
     @livewireStyles
 </head>
 
@@ -43,17 +45,17 @@
     </div>
     <footer>
         @livewire('footer')
-     </footer>
+    </footer>
     @stack('modals')
 
     @livewireScripts
     <script>
-        livewire.on('alert', function(){
+        livewire.on('alert', function() {
             Swal.fire(
-                    'Cita agendada exitosamente',
-                    'Gracias por su preferencia!',
-                    'success'
-                )   
+                'Cita agendada exitosamente',
+                'Gracias por su preferencia!',
+                'success'
+            )
         })
     </script>
 </body>
