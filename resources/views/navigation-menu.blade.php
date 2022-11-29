@@ -73,9 +73,16 @@
                             <x-jet-dropdown-link href="{{ route('profile.show') }}">
                                 {{ __('Profile') }}
                             </x-jet-dropdown-link>
-                            <x-jet-dropdown-link href="{{ route('dashboard') }}">
-                                {{ __('Dashboard') }}
-                            </x-jet-dropdown-link>
+                            {{-- {{roles()}} --}}
+                            @if(Auth::user()->role_id ==1)
+
+                                <x-jet-dropdown-link href="{{ route('dashboard') }}">
+                                    {{ __('Dashboard') }}
+                                    
+                                </x-jet-dropdown-link>
+
+                            
+                           @endif
 
                             @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                                 <x-jet-dropdown-link href="{{ route('api-tokens.index') }}">
@@ -211,4 +218,10 @@
             </div>
         </div>
     </div> --}}
+    <script>
+        public function roles(){
+            $role = {{Auth::user()->role_id}}
+
+        }return $role;
+    </script>
 </nav>

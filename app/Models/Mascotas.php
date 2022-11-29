@@ -8,6 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Mascotas extends Model
 {
     use HasFactory;
+    protected $fillable = [
+       
+        'nombre',
+        'edad',
+        'raza',
+        'sexo',
+        'peso',
+        'user_id',
+    ];
 
     public function user(){
         return $this->belongsTo('App\Models\User');
