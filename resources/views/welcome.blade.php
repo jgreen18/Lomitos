@@ -6,6 +6,9 @@
         @livewire('slogan')
      </section>
      <section>
+        @livewire('carousel')
+     </section>
+     <section>
         @livewire('mapa')
      </section>
  </x-app-layout>
