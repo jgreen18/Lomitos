@@ -8,7 +8,7 @@
             <div class="max-w-2xl mx-auto">
                 <div id="default-carousel" class="relative" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                    <div class="overflow-hidden relative h-56 sm:h-64 xl:h-80 2xl:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
                             <span

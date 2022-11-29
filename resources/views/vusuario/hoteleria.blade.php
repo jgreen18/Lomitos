@@ -8,7 +8,7 @@
             <div class="max-w-2xl mx-auto">
                 <div id="default-carousel" class="relative" data-carousel="slide">
                     <!-- Carousel wrapper -->
-                    <div class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+                    <div class="overflow-hidden relative h-56 sm:h-64 xl:h-80 2xl:h-96">
                         <!-- Item 1 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
                             <span
@@ -20,13 +20,19 @@
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/hyg/hg-6.jpeg') }}"
-                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            <img src="{{ URL::asset('/img/hyg/hg-11.jpeg') }}"
+                                class="block absolute top-3/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
                             <img src="{{ URL::asset('/img/hyg/hg-12.jpeg') }}"
+                                class="block absolute top-3/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/hyg/hg-2.jpeg') }}"
                                 class="block absolute top-3/4 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
@@ -39,6 +45,8 @@
                             data-carousel-slide-to="1"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
                             data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                            data-carousel-slide-to="3"></button>
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
