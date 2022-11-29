@@ -6,12 +6,11 @@ use Livewire\Component;
 use App\Models\Citas;
 use App\Models\Mascotas;
 use Illuminate\Support\Facades\Auth;
-
-class AgendarCita extends Component
+class Agguarderia extends Component
 {
     public $open = false;  
 
-    public  $mascota_id ='1', $servicio_id ='1', $fecha,$hora; 
+    public  $mascota_id ='1', $servicio_id ='4', $fecha,$hora; 
    
 
     protected $rules =[
@@ -45,8 +44,6 @@ class AgendarCita extends Component
         $mascotas = Mascotas::where('user_id' ,'=', $id)->get();
         
         
-        return view('livewire.agendar-cita', compact('mascotas') );
+        return view('livewire.agguarderia');
     }
-
-    
 }

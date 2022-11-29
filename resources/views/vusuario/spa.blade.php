@@ -107,7 +107,7 @@
                     </div>
                     {{-- Agregue condicion --}}
                     @auth
-                        @livewire('agendar-cita')
+                        @livewire('agspa')
                     @else
                         <x-jet-button wire:click="$set('open', true)">
                             <a href="{{ route('login') }}">Inicia sesion para agendar</a>

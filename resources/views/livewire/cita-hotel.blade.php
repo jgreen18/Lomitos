@@ -1,4 +1,6 @@
+
 <div>
+
     <x-jet-button wire:click="$set('open', true)">
         Agendar cita
     </x-jet-button>
