@@ -152,7 +152,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <select name="" wire:model="mascota.sexo">
+                    <select name="" class="w-64 rounded-md mt-5 border-gray-400" wire:model="mascota.sexo">
                         <option selected value="Macho">Macho</option>
                         <option value="Hembra">Hembra</option>
                     </select>
