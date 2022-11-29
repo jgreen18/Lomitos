@@ -20,7 +20,7 @@
                 </div>
                 <div class="mb-4">
                     <x-jet-label value="Edad" />
-                    <x-jet-input type="number" placeholder="años" wire:model="edad"/>
+                    <x-jet-input type="number" placeholder="Años" wire:model="edad"/>
                     <x-jet-input-error for='edad'>
 
                     </x-jet-input-error>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="mb-4">
-                    <select name=""  wire:model="sexo">
+                    <select name="" class="w-64 rounded-md mt-5 border-gray-400" wire:model="sexo">
                         <option selected value="Macho">Macho</option>
                         <option value="Hembra">Hembra</option>
                     </select>

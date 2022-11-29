@@ -6,13 +6,13 @@
 
     <x-jet-dialog-modal wire:model="open">
         <x-slot name="title">
-            Actualizar información de {{ $mascota->nombre }}
+            Actualizar información de lomito
         </x-slot>
         <x-slot name="content">
             <div class="inline-grid grid-cols-2 gap-5">
                 <div class="mb-4">
                     <x-jet-label value="Nombre del lomito" />
-                    <x-jet-input wire:model="mascota.nombre" type="text"  placeholder="Pluto" />
+                    <x-jet-input wire:model="mascota.nombre" type="text" placeholder="Pluto" />
                     <x-jet-input-error for='nombre'>
 
                     </x-jet-input-error>
@@ -38,14 +38,13 @@
                 </div>
 
                 <div class="mb-4">
-                    <select name="" wire:model="mascota.sexo">
+                    <select name="" class="w-64 rounded-md mt-5 border-gray-400" wire:model="mascota.sexo">
                         <option selected value="Macho">Macho</option>
                         <option value="Hembra">Hembra</option>
                     </select>
                     <x-jet-input-error for='sexo'>
 
                     </x-jet-input-error>
-
                 </div>
                 <div class="mb-4">
                     <x-jet-label value="Peso" />
