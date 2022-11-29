@@ -13,6 +13,7 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- Styles -->
     <link rel="icon" type="image/jpg" href=""/><!--Agregar ruta-->
@@ -45,6 +46,15 @@
     @stack('modals')
 
     @livewireScripts
+    <script>
+        livewire.on('alert', function(){
+            Swal.fire(
+                    'Cita agendada exitosamente',
+                    'Gracias por su preferencia!',
+                    'success'
+                )   
+        })
+    </script>
 </body>
 
 </html>

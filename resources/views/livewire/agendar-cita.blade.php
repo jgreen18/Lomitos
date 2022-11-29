@@ -20,24 +20,37 @@
                         @endforeach
                         
                     </select>
-                    {{$mascota_id}}
-                
+                   
                 {{-- {{$mascotas}} --}}
+
+               
+                <x-jet-input-error for='mascota_id'>
+
+                </x-jet-input-error>
+                    
+               
                 
             </div>
             <div class="inline-grid grid-cols-2 gap-5">
                 <div class="mb-4">
                      <x-jet-label value="Seleccione una fecha" />
-                     <x-jet-input type="date" name="new_year" class="w-64" wire:model='fecha_cita'/>
-                     {{$fecha_cita}}
+                     <x-jet-input type="date" name="new_year" class="w-64" wire:model='fecha'/>
+                     
                     
+                        
+                     <x-jet-input-error for='fecha'>
 
+                    </x-jet-input-error>
                      
                 </div>
                 <div class="mb-4">
                      <x-jet-label value="Elija una hora" />
-                     <x-jet-input type="time" class="w-64" wire:model='hora_cita'/>
-                     {{$hora_cita}}
+                     <x-jet-input type="time" class="w-64" wire:model='hora'/>
+                   
+                     
+                     <x-jet-input-error for='hora'>
+
+                    </x-jet-input-error>
                 </div>
                 
             </div>
