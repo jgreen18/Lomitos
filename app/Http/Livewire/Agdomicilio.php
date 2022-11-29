@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Citas;
 use App\Models\Mascotas;
+use App\Models\Servicios;
 use Illuminate\Support\Facades\Auth;
 
 class Agdomicilio extends Component
@@ -43,8 +44,8 @@ class Agdomicilio extends Component
     {
         $id = Auth::user()->id;
         $mascotas = Mascotas::where('user_id' ,'=', $id)->get();
+        $servicios = Servicios::where('id',"=",$this->servicio_id)->get();
         
-        
-        return view('livewire.agdomicilio');
+        return view('livewire.agdomicilio', compact('mascotas'),compact('servicios'));
     }
 }

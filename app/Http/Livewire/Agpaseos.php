@@ -5,6 +5,7 @@ namespace App\Http\Livewire;
 use Livewire\Component;
 use App\Models\Citas;
 use App\Models\Mascotas;
+use App\Models\Servicios;
 use Illuminate\Support\Facades\Auth;
 
 class Agpaseos extends Component
@@ -43,8 +44,9 @@ class Agpaseos extends Component
     {
         $id = Auth::user()->id;
         $mascotas = Mascotas::where('user_id' ,'=', $id)->get();
+        $servicios = Servicios::where('id',"=",$this->servicio_id)->get();
         
         
-        return view('livewire.agpaseos');
+        return view('livewire.agpaseos', compact('mascotas'),compact('servicios'));
     }
 }

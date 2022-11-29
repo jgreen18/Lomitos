@@ -24,7 +24,10 @@
                     </x-jet-input-error>
                 </div>
                 <div class="mb-4 pt-2">
-                    <x-jet-label value="$" class="flex w-64 pl-4 py-3 my-3 mx-auto border rounded-md" />
+                    @foreach ($servicios as $servicio)
+                    <x-jet-label value="Precio por servicio $ {{$servicio['precio']}} " class="flex w-64 pl-4 py-3 my-3 mx-auto border rounded-md" />
+
+                    @endforeach
                 </div>
             </div>
 
