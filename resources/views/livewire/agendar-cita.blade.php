@@ -13,10 +13,19 @@
                 <div class="mb-4">
                     <x-jet-label value="Nombre del(los) lomito(s)" />
                     <select class="w-64 rounded-md" form="mascota_id" required wire:model='mascota_id'>
-                        {{-- <option x-bind:disable="mascota_id">Selecione su mascota</option> --}}
+                        @if ($mascota_id == null)
+                        <option >Selecione su mascota</option>
                         @foreach ($mascotas as $mascota)
                             <option selected value="{{ $mascota['id'] }}"> {{ $mascota['nombre'] }} </option>
                         @endforeach
+                        @else
+                        
+                        <option disabled>Selecione su mascota</option>
+                        @foreach ($mascotas as $mascota)
+                            <option selected value="{{ $mascota['id'] }}"> {{ $mascota['nombre'] }} </option>
+                        @endforeach
+                            
+                        @endif
                     </select>
 
                     {{-- {{$mascotas}} --}}

@@ -52,6 +52,10 @@ Route::controller(ServiciosController::class)->group(function(){
 
 
 
+Route::get('/dashboard', DashboardController::class)
+->name('dashboard')
+->middleware('auth:sanctum','admin');
+
 Route::get('prueba_de_Comportamiento', ComportamientoController::class)
 ->name('Prueba_de_Comportamiento');
 
@@ -63,7 +67,6 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/dashboard', DashboardController::class)->name('dashboard');
 });
 
 // Route::middleware([

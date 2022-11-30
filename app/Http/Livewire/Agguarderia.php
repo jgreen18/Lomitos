@@ -11,7 +11,7 @@ class Agguarderia extends Component
 {
     public $open = false;  
 
-    public  $mascota_id , $servicio_id ='4', $fecha,$hora; 
+    public  $mascota_id, $servicio_id ='4', $fecha,$hora; 
    
 
     protected $rules =[

@@ -12,7 +12,7 @@ class Aghoteleria extends Component
 {
     public $open = false;  
 
-    public  $mascota_id ='1', $servicio_id ='3', $fecha,$hora; 
+    public  $mascota_id, $servicio_id ='3', $fecha,$hora; 
    
 
     protected $rules =[

@@ -5,7 +5,7 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('inicio') }}">
                         <!--Poner logo de lomitos aquí-->
                         <img class="w-14" src="{{ URL::asset('/img/welcome/logo.png') }}" alt="">
                         <x-jet-nav-link href="{{ route('inicio') }}" :active="request()->routeIs('inicio')">
@@ -74,7 +74,7 @@
                                 {{ __('Perfil') }}
                             </x-jet-dropdown-link>
                             {{-- {{roles()}} --}}
-                            @if(Auth::user()->role_id ==1)
+                            @if(Auth::user()->role_id ==2)
 
                                 <x-jet-dropdown-link href="{{ route('dashboard') }}">
                                     {{ __('Dashboard') }}

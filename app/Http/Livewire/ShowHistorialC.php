@@ -15,9 +15,12 @@ class ShowHistorialC extends Component
     {
         // $servicios = Servicios::all();
         $id = Auth::user()->id;
+        
         $hcitas = Citas::where('mascota_id', '=', $id)->get();
-        // $servicios = Servicios::where('id', '=', $id)->get();
+
+        
+        $servicios = Servicios::all();
         $mascotas = Mascotas::where('user_id', '=', $id)->get();
-        return view('livewire.show-historial-c', compact('hcitas','mascotas'));
+        return view('livewire.show-historial-c', compact('hcitas','mascotas','servicios'));
     }
 }
