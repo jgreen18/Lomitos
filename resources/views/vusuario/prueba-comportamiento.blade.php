@@ -14,19 +14,19 @@
                             <span
                                 class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
                                 Slide</span>
-                            <img src="{{ URL::asset('/img/spa-8.jpeg') }}"
+                            <img src="{{ URL::asset('/img/hyg/hg-10.jpeg') }}"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/spa-9.jpeg') }}"
+                            <img src="{{ URL::asset('/img/hyg/hg-8.jpeg') }}"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 3 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/spa-1.jpeg') }}"
+                            <img src="{{ URL::asset('/img/hyg/hg-15.jpeg') }}"
                                 class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
