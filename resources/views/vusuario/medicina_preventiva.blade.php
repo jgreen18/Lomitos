@@ -14,14 +14,20 @@
                             <span
                                 class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
                                 Slide</span>
-                            <img src="{{ URL::asset('/img/medicinap/mp-3.jpeg') }}"
-                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            <img src="{{ URL::asset('/img/medicinap/mp-5.jpeg') }}"
+                                class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                         <!-- Item 2 -->
                         <div class="hidden duration-500 ease-in-out" data-carousel-item>
-                            <img src="{{ URL::asset('/img/medicinap/mp-4.jpeg') }}"
-                                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                            <img src="{{ URL::asset('/img/medicinap/mp-6.jpeg') }}"
+                                class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                                alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-500 ease-in-out" data-carousel-item>
+                            <img src="{{ URL::asset('/img/medicinap/mp-7.jpeg') }}"
+                                class="block absolute top-1/3 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
                                 alt="...">
                         </div>
                     </div>
@@ -31,6 +37,8 @@
                             data-carousel-slide-to="0"></button>
                         <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
                             data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                            data-carousel-slide-to="2"></button>
                     </div>
                     <!-- Slider controls -->
                     <button type="button"
@@ -81,14 +89,14 @@
                             tempore excepturi, fugit placeat nostrum aut accusantium, culpa, vitae a corrupti.
                         </p>
                     </div>
-                    {{-- Agregue condicion --}}
+                    {{-- Agregue condicion
                     @auth
                         @livewire('agmedicina')
                     @else
                         <x-jet-button wire:click="$set('open', true)">
                             <a href="{{ route('login') }}">Inicia sesion para agendar</a>
                         </x-jet-button>
-                    @endauth
+                    @endauth --}}
                 </div>
             </div>
         </div>

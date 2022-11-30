@@ -18,8 +18,10 @@
                             <option selected value="{{ $mascota['id'] }}"> {{ $mascota['nombre'] }} </option>
                         @endforeach
                     </select>
+                    {{ $mascota['id'] }}
 
                     {{-- {{$mascotas}} --}}
+                    {{-- {{$servicios}} --}}
                     <x-jet-input-error for='mascota_id'>
                     </x-jet-input-error>
                 </div>
@@ -28,6 +30,8 @@
                     <x-jet-label value="Precio por servicio $ {{$servicio['precio']}} " class="flex w-64 pl-4 py-3 my-3 mx-auto border rounded-md" />
 
                     @endforeach
+                    {{-- {{ $servicios['id'] }} --}}
+
                 </div>
             </div>
 

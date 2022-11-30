@@ -1,30 +1,32 @@
 <x-app-layout>
     <x-slot name="header">
-        <ul id="tabs" class="inline-flex w-full px-1 pt-2 ">
-            <li class="px-4 py-2 -mb-px font-semibold text-gray-800 border-b-2 border-blue-400 rounded-t">
-                <a href="#first">
-                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                        {{ __('Perfil') }}
-                    </h2>
-                </a>
-            </li>
-            <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50">
-                <a href="#second">
-                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                        {{ __('Mascotas') }}
-                    </h2>
-                    {{-- Agregar componente livewire aquí --}}
+        <div class="w-1/2 mt-4 rounded border-b-2">
+            <ul id="tabs" class="inline-flex w-full px-1 pt-2">
+                <li class="px-4 py-2 -mb-px font-semibold text-gray-800">
+                    <a href="#first">
+                        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            {{ __('Perfil') }}
+                        </h2>
+                    </a>
+                </li>
+                <li class="px-4 py-2 font-semibold text-gray-800">
+                    <a href="#second">
+                        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            {{ __('Mascotas') }}
+                        </h2>
+                        {{-- Agregar componente livewire aquí --}}
 
-                </a>
-            </li>
-            <li class="px-4 py-2 font-semibold text-gray-800 rounded-t opacity-50">
-                <a href="">
-                    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                        {{ __('Historial') }}
-                    </h2>
-                </a>
-            </li>
-        </ul>
+                    </a>
+                </li>
+                <li class="px-4 py-2 font-semibold text-gray-800">
+                    <a href="#third">
+                        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                            {{ __('Historial') }}
+                        </h2>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <div id="tab-contents">
             <div class="" id="first">
@@ -68,6 +70,9 @@
             </div>
             <div id="second">
                 @livewire('show-pets')
+            </div>
+            <div id="third">
+                @livewire('show-historial-c')
             </div>
         </div>
     </x-slot>

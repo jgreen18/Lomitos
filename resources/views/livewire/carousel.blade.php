@@ -29,20 +29,25 @@
                 </div>
                 <!-- Item 3 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ URL::asset('/img/instalaciones/i-3.jpeg') }}"
+                    <img src="{{ URL::asset('/img/instalaciones/i-7.jpeg') }}"
                         class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 </div>
                 <!-- Item 4 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                    <img src="{{ URL::asset('/img/instalaciones/i-4.jpeg') }}"
+                    <img src="{{ URL::asset('/img/instalaciones/i-8.jpeg') }}"
                         class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 </div>
                 <!-- Item 5 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="{{ URL::asset('/img/instalaciones/i-4.jpeg') }}"
+                        class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                </div>
+                <!-- Item 6 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ URL::asset('/img/instalaciones/i-5.jpeg') }}"
                         class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                 </div>
-                <!-- Item 5 -->
+                <!-- Item 7 -->
                 <div class="hidden duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ URL::asset('/img/instalaciones/i-6.jpeg') }}"
                         class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
@@ -62,6 +67,8 @@
                     data-carousel-slide-to="4"></button>
                 <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 6"
                     data-carousel-slide-to="5"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 7"
+                    data-carousel-slide-to="6"></button>
             </div>
             <!-- Slider controls -->
             <button type="button"

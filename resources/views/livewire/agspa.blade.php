@@ -19,7 +19,7 @@
                         @endforeach
                     </select>
 
-                    {{-- {{$mascotas}} --}}
+                   {{ $mascota['nombre']}}
                     <x-jet-input-error for='mascota_id'>
                     </x-jet-input-error>
                 </div>

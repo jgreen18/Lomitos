@@ -2,8 +2,10 @@
     <section class="md:h-full flex items-center text-gray-600">
         <div class="container px-5 py-6 mx-auto">
             <div class="text-center mb-12">
-                <h5 class="text-base md:text-lg text-black font-semibold mb-1">¿Ocupado y no tienes quién cuide de tu lomito Conoce nuestro</h5>
-                <h1 class="text-3xl md:text-4xl text-black font-extrabold uppercase tracking-wider">Servicio de Guardería</h1>
+                <h5 class="text-base md:text-lg text-black font-semibold mb-1">¿Ocupado y no tienes quién cuide de tu
+                    lomito Conoce nuestro</h5>
+                <h1 class="text-3xl md:text-4xl text-black font-extrabold uppercase tracking-wider">Servicio de Guardería
+                </h1>
             </div>
             <div class="max-w-2xl mx-auto">
                 <div id="default-carousel" class="relative" data-carousel="slide">
@@ -72,21 +74,13 @@
                 <div class="flex flex-col items-center">
                     <div class="my-5">
                         <p class="font-bold text-justify">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque praesentium provident
-                            esse
-                            odio. Sint quam necessitatibus a incidunt laboriosam cum, culpa iusto sit, assumenda vel
-                            earum
-                            ducimus, fugit reprehenderit voluptatum. Quibusdam exercitationem corrupti, hic optio
-                            officiis
-                            at laborum sequi, repellat vitae dolores molestias eius eveniet quo enim voluptatum omnis
-                            rem.
+                            Regálale un día de diversión a tus lomitos en un horario de 8:00 a.m. a 7:00 p.m. disfrutando de la compañía de otros
+                            perritos y sus nannys. Realizamos actividades para fomentar su desarrollo físico y mental
+                            como juegar con la pelota, cuerdas, mordeduras, etc; además de momentos de descanso y
+                            relajación.
                         </p>
-                        <p class="font-bold text-justify">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro suscipit repudiandae at quae
-                            reiciendis doloremque veritatis enim nostrum placeat facere labore, nesciunt in quaerat
-                            excepturi eum expedita eius velit eligendi explicabo ipsam? Animi fuga ex omnis vel cum
-                            numquam
-                            tempore excepturi, fugit placeat nostrum aut accusantium, culpa, vitae a corrupti.
+                        <p class="font-bold text-justify text-lomito-primary">
+                            <span>Nos adaptamos a las necesidades de cada perrito.</span> 
                         </p>
                     </div>
                     {{-- Agregue condicion --}}
